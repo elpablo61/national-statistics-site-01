@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — National Statistics of Indonesia</title>
+<meta name="description" content="NusaStat: Indonesia's national statistics — population, economy, prices, labour and regions, with real figures from BPS and the World Bank.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">◈</span>
+      <span class="brand-text"><strong>NusaStat</strong><small>National Statistics of Indonesia</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Sections">
+      <a href="#/" data-route="overview">Overview</a>
+      <a href="#/population" data-route="population">Population</a>
+      <a href="#/economy" data-route="economy">Economy</a>
+      <a href="#/prices" data-route="prices">Prices</a>
+      <a href="#/labour" data-route="labour">Labour</a>
+      <a href="#/regions" data-route="regions">Regions</a>
+      <a href="#/about" data-route="about">About</a>
+    </nav>
+  </div>
+  <div class="ticker wrap" id="ticker" aria-label="Key figures"></div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite"></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>NusaStat</strong> — an independent statistics portal. All figures are public data from
+    <strong>BPS — Badan Pusat Statistik (bps.go.id)</strong> and the <strong>World Bank</strong>, 2019–2024.
+    See <a href="#/about">About &amp; sources</a> for methods and notes.</p>
+    <p class="fineprint">Figures are rounded from official publications. Provincial figures are estimates
+    compiled from BPS provincial releases. NusaStat is an original work and is not affiliated with BPS.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="router.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
